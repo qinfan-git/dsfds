@@ -1,0 +1,22 @@
+import com.opensymphony.workflow.InvalidInputException
+import com.atlassian.jira.component.ComponentAccessor
+
+/**
+ * �ֶ� fieldName ��ֵΪ fieldNameValue ��ʱ���򵯳�������ʾ�����ܽ���ת��
+ *
+ *
+ * Create/Update
+ * 2025/02/18 13:15
+ */
+//ʹ���ֶ�����
+def fieldName = "���ܼ���������"
+//ָ����ֵ
+def fieldNameValue = "H"
+def customFieldManager = ComponentAccessor.getCustomFieldManager();
+
+
+def selectedValue = issue.getCustomFieldValue(fieldName)
+if(selectedValue != null && selectedValue == fieldNameValue) {
+    throw new InvalidInputException(fieldName + "�ֶ�ֵ����Ϊ��" + fieldNameValue)
+}
+
