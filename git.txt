@@ -1,0 +1,7 @@
+有github帐号密码
+
+https://github.com/login/oauth/authorize?client_id=Iv23liJKdodNRt195vJE&state=abcdefg1
+
+
+https://github.com/login/oauth/access_token?client_id=Iv23liJKdodNRt195vJE&client_secret=4adbced6b891377a144e83409c8427f9467f85e5&code=50a1643045f890075123
+
